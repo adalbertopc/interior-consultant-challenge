@@ -1,0 +1,253 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--bg-color: #181719;
+}
+
+body {
+	background: var(--bg-color);
+	color: #fff;
+	font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: unset;
+}
+
+.container {
+	width: 94%;
+	margin: 0 auto;
+}
+
+.header {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav__logo {
+	font-family: 'Crimson Pro', Arial, Helvetica, sans-serif;
+	font-weight: 200;
+	font-size: 14px;
+	padding: 8px;
+	border: 1px solid #fff;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.nav__button {
+	background: transparent;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	position: relative;
+	z-index: 3;
+}
+
+.nav__button__ico {
+	font-size: 40px;
+}
+
+.nav-links {
+	display: none;
+}
+
+.nav-links.show {
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: var(--bg-color);
+}
+
+.nav__link {
+	list-style: none;
+	text-align: center;
+	margin-bottom: 32px;
+	font-size: 18px;
+}
+
+.consultant {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.consultant-info {
+	max-width: 300px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 25px;
+	margin-bottom: 37px;
+}
+
+.consultant-info__title {
+	font-family: Lora, Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 46px;
+}
+.consultant-info__message {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 17px;
+}
+
+.consultant__read-more {
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+	display: inline-flex;
+	align-items: center;
+}
+
+.consultant__read-more__ico {
+	padding-left: 15px;
+}
+
+.consultant-visuals {
+	position: relative;
+}
+
+.consultant-visuals__image {
+	width: 100%;
+}
+
+.consultant-card {
+	display: grid;
+	background: var(--bg-color);
+	padding: 20px;
+	width: 300px;
+	position: absolute;
+	bottom: -100px;
+	right: 10px;
+}
+
+.consultant-card__image {
+	width: 36px;
+	height: 36px;
+	border-radius: 99px;
+	margin-right: 14px;
+}
+
+.consultant-card__info {
+	display: flex;
+	align-items: center;
+}
+
+.consultant-card__name {
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.consultant-card__role {
+	color: #828282;
+	font-size: 10px;
+	font-weight: 500;
+}
+
+.consultant-card__content {
+	font-family: Lora, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 23px;
+	padding: 20px 0;
+}
+.footer {
+	margin-top: 250px;
+}
+
+@media screen and (min-width: 769px) {
+	.container {
+		width: 90%;
+		max-width: 1286px;
+	}
+
+	.header {
+		margin-top: 45px;
+	}
+
+	.nav__button {
+		display: none;
+	}
+
+	.nav-links {
+		display: flex;
+	}
+
+	.nav__link {
+		padding-left: 85px;
+	}
+
+	.consultant {
+		margin-top: 150px;
+		grid-template-columns: 1fr 1.5fr;
+	}
+
+	.consultant-info {
+		max-width: 410px;
+		row-gap: 40px;
+	}
+
+	.consultant-info__title {
+		font-size: 48px;
+		line-height: 61px;
+	}
+
+	.consultant-info__message {
+		font-size: 24px;
+		line-height: 29px;
+	}
+
+	.consultant__read-more {
+		font-size: 18px;
+	}
+
+	.consultant-visuals__image {
+		max-width: 737px;
+		max-height: 555px;
+		float: right;
+	}
+
+	.consultant-card {
+		width: 410px;
+		bottom: -115px;
+		right: 4%;
+	}
+
+	.consultant-card__image {
+		width: 50px;
+		height: 50px;
+	}
+
+	.consultant-card__name {
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.consultant-card__role {
+		font-size: 10px;
+		line-height: 15px;
+	}
+
+	.consultant-card__content {
+		font-size: 24px;
+		line-height: 31px;
+	}
+}
