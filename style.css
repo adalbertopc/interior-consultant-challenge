@@ -67,7 +67,7 @@ a {
 	display: block;
 	width: 100vw;
 	height: 100vh;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 	z-index: 2;
@@ -173,10 +173,15 @@ a {
 }
 .footer {
 	margin-top: 130px;
-	padding: 45px 0;
+	padding: 25px 35px 35px 35px;
+	border-top: 1px solid #a9a9a9;
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .footer__info {
+	color: #a9a9a9;
 	text-align: center;
 	font-size: 12px;
 }
@@ -262,6 +267,8 @@ a {
 
 	.footer {
 		margin-top: 200px;
+		border: none;
+		max-width: unset;
 	}
 
 	.footer__info {
